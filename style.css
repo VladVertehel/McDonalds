@@ -14,9 +14,11 @@
     font-size: 30px;
     text-align: center;
     font-style: normal;
+    transition: 0.5s;
   }
   .tile h2:hover{
       color: rgb(156, 154, 154);
+      transition: 0.5s;
   }
   .container {
     position: relative;
