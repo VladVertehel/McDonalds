@@ -1,0 +1,105 @@
+.tiles {
+    width: 600px;
+    font-size: 0;
+    margin:  auto;
+  }
+  
+  .tile {
+    width: calc(600px / 3);
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .tile h2 {
+    font-size: 30px;
+    text-align: center;
+    font-style: normal;
+    transition: 0.5s;
+  }
+  .tile h2:hover{
+      color: rgb(156, 154, 154);
+      transition: 0.5s;
+  }
+  .container {
+    position: relative;
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #b3aeae;
+    margin-left: 25px;
+    font-size: x-large;
+  }
+  
+  .container:before,
+  .container:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 19px;
+    border: 11px solid transparent;
+    border-bottom-color: #dddddd;
+  }
+  
+  .container:after {
+    left: 20px;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  .animated-border-button {
+    background-color: #141414;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+  }
+  
+  .animated-border-button:before,
+  .animated-border-button:after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .animated-border-button:before {
+    border-top: 2px solid #141414;
+    right: 0;
+    top: -4px;
+  }
+  
+  .animated-border-button:after {
+    border-bottom: 2px solid #141414;
+    bottom: -4px;
+    left: 0;
+  }
+  
+  .animated-border-button:hover:before,
+  .animated-border-button:hover:after {
+    width: 100%;
+  }
+  button{font-style: italic;
+font-size:large;}
+.burger:hover{
+  animation: flipH 1s linear;
+}
+.tasty:hover{
+  animation: flipV 1s linear;
+}
+@keyframes flipV{
+  50%{
+      transform: rotateX(180deg);
+  }
+  to{
+      transform: rotateX(360deg);
+  }
+}
+@keyframes flipH{
+  50%{
+      transform: rotateY(180deg);
+  }
+  to{
+      transform: rotateY(360deg);
+  }
+}
